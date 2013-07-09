@@ -8,16 +8,16 @@ body {
 img, video { 
 	max-width: 100%; 
 }
-.column {
-	width: 50%;
-	float: left;
-}
 div#container {
 	width: 50%;
 	padding: 30px;
 	margin: 0px auto;
 	background-color: rgba(251, 248, 0, 1);
 	overflow:auto;
+}
+.column {
+	width: 50%;
+	float: left;
 }
 @media (max-width: 480px) {
 	.column {
