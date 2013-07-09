@@ -23,4 +23,4 @@ function onSuccess(stream) {
 function onError(errorInfo) {
 	// Output the error message to the console
 	console.log(errorInfo);
-} END onError
+} // END onError
