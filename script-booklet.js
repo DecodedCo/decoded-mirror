@@ -6,14 +6,8 @@ function startEverything() {
 	// Write a message to the console
 	console.log("It's working!");
 
-	// Make it work cross browser
-	navigator.getMedia = ( navigator.getUserMedia || 
-    	                   navigator.webkitGetUserMedia ||
-        	               navigator.mozGetUserMedia ||
-            	           navigator.msGetUserMedia);
-
 	// Ask the browser for access to the computer's audio and video
- 	navigator.getMedia({video: true, audio: true}, onSuccess, onError);
+ 	navigator.getUserMedia({video: true, audio: true}, onSuccess, onError);
 } // END startEverything
 
 // Define a function to run if we successfully get the video
